@@ -3,11 +3,11 @@
     <div class="header">
       <div class="header-title">
         <ul>
-          <li><a href="#home">Csming's Planet</a></li>
-          <li><a href="#home">HOME</a></li>
-          <li><a href="#archives">ARCHIVES</a></li>
-          <li><a href="#contact">TAGS</a></li>
-          <li><a href="#about">ABOUT</a></li>
+          <li><a href="/#/home">Csming's Planet</a></li>
+          <li><a href="/#/home">HOME</a></li>
+          <li><a href="/#/archives">ARCHIVES</a></li>
+          <li><a href="/#/contact">TAGS</a></li>
+          <li><a href="/#/about">ABOUT</a></li>
         </ul>
 
         <div class="author">
@@ -23,7 +23,31 @@
 
     </div>
     <div>
-      <router-view :key="key"></router-view>
+      <div class="container">
+        <div class="container-wrapper">
+          <div class="content">
+            <router-view :key="key"></router-view>
+          </div>
+
+          <div class="slider">
+
+            <div class="author" style="color: #828282;">
+              <img class="author-avatar" src="../../assets/avatar.jpg"/>
+              <h1 class="author-name">
+                Csming
+              </h1>
+              <div class="author-description">
+                虽千万人吾往矣
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <div class="footer">
+          Copyright © Csming 2019
+        </div>
+      </div>
     </div>
   </div>
 </template>
@@ -83,5 +107,39 @@ export default {
 
   li a:hover {
     color: #90CAF9;
+  }
+
+  /* container */
+  .container {
+    width: 1200px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .container-wrapper {
+    width: 100%;
+    display: -webkit-flex;
+    display: flex;
+  }
+
+  .content {
+    width: 100%;
+    flex: 1;
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }
+
+  .slider {
+    width: 280px;
+    text-align: center;
+    padding: 16px;
+    margin-top: 24px;
+  }
+
+  .footer {
+    height: 80px;
+    line-height: 80px;
+    font-size: 16px;
+    text-align: center;
   }
 </style>

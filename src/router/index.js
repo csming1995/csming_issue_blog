@@ -16,6 +16,12 @@ export default new Router({
           component: () => import('@/views/home/index'),
           name: 'Home',
           meta: { title: 'Home', icon: 'home', affix: true }
+        },
+        {
+          path: 'about',
+          component: () => import('@/views/about/index'),
+          name: 'About',
+          meta: { title: 'About', icon: 'about', affix: true }
         }
       ]
     }
