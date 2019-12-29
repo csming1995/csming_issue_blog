@@ -9,6 +9,16 @@
           <li><a href="#contact">TAGS</a></li>
           <li><a href="#about">ABOUT</a></li>
         </ul>
+
+        <div class="author">
+          <img class="author-avatar" src="../../assets/avatar.jpg"/>
+          <h1 class="author-name">
+            Csming
+          </h1>
+          <div class="author-description">
+            虽千万人吾往矣
+          </div>
+        </div>
       </div>
 
     </div>
@@ -31,15 +41,17 @@ export default {
 
 <style scoped>
 
+  @import "../../style/common.css";
+
   .header {
-    height: 360px;
+    height: 400px;
     background: #90CAF9 url("../../assets/normal-header.png") 0 center;
     -webkit-background-size: 100%;
     background-size: 100%;
   }
 
   .header-title {
-    height: 380px;
+    height: 400px;
     color: #ffffff;
     background: rgba(255, 255, 255, 0.26);
     font-size: 15px;

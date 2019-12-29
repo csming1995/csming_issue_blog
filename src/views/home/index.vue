@@ -7,7 +7,7 @@
 
       <div class="slider">
 
-        <div class="author">
+        <div class="author" style="color: #828282;">
           <img class="author-avatar" src="../../assets/avatar.jpg"/>
           <h1 class="author-name">
             Csming
@@ -35,6 +35,8 @@ export default {
 </script>
 
 <style scoped>
+  @import "../../style/common.css";
+
   .container {
     width: 1200px;
     margin-right: auto;
@@ -59,22 +61,6 @@ export default {
     text-align: center;
     padding: 16px;
     margin-top: 24px;
-  }
-
-  .author-avatar {
-    width: 200px;
-    height: 200px;
-    border-radius: 100px;
-    border: solid #d2d2d2 3px;
-  }
-
-  .author-name {
-    font-size: 20px;
-    color: #828282;
-  }
-
-  .author-description {
-    color: #828282;
   }
 
   .footer {
